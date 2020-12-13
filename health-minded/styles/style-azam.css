@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  /*Height and width calc includes border and padding*/
+}
+
+body {
+  margin: 0;
+  height: 200vh;
+  /*delete this when you insert content, it just to test sticky*/
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #004080;
+  position: relative;
+  top: 0;
+}
+
+#main-icon {
+  height: 5rem;
+  width: 10rem;
+}
+
+.navBlock {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  text-decoration: none;
+}
+
+.navBlock:hover {
+  color: greenyellow;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.background-container {
+  position: relative;
+  text-align: center;
+}
+
+.background-image {
+  z-index: -2;
+}
+
+.background-title {
+  font-size: 6em;
+  z-index: 1;
+  color: antiquewhite;
+  width: fit-content;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
