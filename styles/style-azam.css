@@ -5,8 +5,7 @@
 
 body {
   margin: 0;
-  height: 200vh;
-  /*delete this when you insert content, it just to test sticky*/
+  height: 200vh; /*delete this when you insert content, it just to test sticky*/
 }
 
 .topnav {
