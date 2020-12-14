@@ -5,8 +5,11 @@
 
 body {
   margin: 0;
-  height: 200vh; /*delete this when you insert content, it just to test sticky*/
+  padding: 0;
+  height: 200vh; /*delete this when youve inserted content, it just to test sticky*/
 }
+
+/*Navigation bar [caution! unless youre really sure , dont disturb this]*/
 
 .topnav {
   display: flex;
@@ -39,7 +42,11 @@ body {
   color: greenyellow;
 }
 
-img {
+
+/*Background image with white text at the middle of backgrnd pic*/
+/*Take note img#background-pic is not the same with img  #background-pic,
+the former target elemnt with both image AND id, the latter only target the child of img with that id*/
+img#background-pic {
   max-width: 100%;
   height: auto;
   object-fit: scale-down;
@@ -47,7 +54,9 @@ img {
 
 .background-container {
   position: relative;
+  margin: 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .background-image {
@@ -60,10 +69,61 @@ img {
   color: antiquewhite;
   width: fit-content;
 }
-
+/*class put thing at the center of container, used in backgrnd pic*/
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+/* Content [under progress] */
+.content-container {
+  position: relative;
+  margin: 0;
+  top: 0;
+}
+/*Blue container for title which in white color*/
+.blue-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: top;
+  background-color: #004080;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  border: 0;
+  width: 100%;
+}
+
+#inside-background-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -1%);
+
+}
+
+@media only screen and (max-width: 820px) {
+  /* For mobile phones: */
+  #inside-background-container {
+    position: relative;
+  }
+
+  .centered.background-title {
+
+    position: relative;
+    background-color: #004080;
+  }
+  .topnav {
+    display: block;
+    
+    text-align: center;
+    align-items: center;
+    
+  }
+  .navBlock {
+    display: inline-block;
+    
+  }
 }
