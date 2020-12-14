@@ -143,8 +143,18 @@ footer {
   width: 25em;
 }
 
-footer form div input {vertical-align: top;}
-footer form div label {vertical-align: top;}
+footer form div input {
+  
+  vertical-align: top;
+   
+  margin: 0;
+}
+
+footer form div label {
+  font-family: Arial, Helvetica, sans-serif;  
+  vertical-align: top;
+
+}
 
 #footer-btn {
   margin-left: 5em;
