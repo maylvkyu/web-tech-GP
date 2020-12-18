@@ -94,7 +94,7 @@ img#background-pic {
   width: 100%;
 }
 
-#inside-background-container {
+.inside-background-container {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -146,6 +146,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* comment is feedback message input*/
 #comment-footer {
   resize: none;
   overflow: auto;
@@ -198,22 +199,23 @@ div#footer-text-input {
 
 @media only screen and (max-width: 820px) {
   /* For mobile phones: */
-  #inside-background-container {
+
+  .inside-background-container {
     position: relative;
   }
 
   .centered.background-title {
-    position: relative;
+    display: block;
     background-color: #004080;
   }
   .topnav {
     display: block;
-
+    padding: 0 0 1em;
     text-align: center;
     align-items: center;
   }
   .navBlock {
-    display: inline-block;
+    display: block;
   }
 
   #footer-bottom-row a {
@@ -222,5 +224,14 @@ div#footer-text-input {
   #footer-bottom-row button {
     display: block;
     margin: 40px auto;
+  }
+
+  #footer-feedback-box label,
+  #footer-feedback-box textarea {
+    display: block;
+  }
+
+  #footer-feedback-box textarea#comment-footer {
+    width: 100%;
   }
 }
