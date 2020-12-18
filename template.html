@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/style-azam.css" />
+  </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="styles/style-azam.css">
-
-</head>
-
-<body>
-
+  <body>
     <header>
-
-        <ul class="topnav">
-
-            <li><a href="#home"><img id="main-icon" src="images/icon.png" alt=" icon health minded"></a></li>
-            <li><a class="navBlock" href="#">Home</a></li>
-            <li><a class="navBlock" href="#">Mental Health</a></li>
-            <li><a class="navBlock" href="#">Services</a></li>
-            <li><a class="navBlock" href="#">FAQs</a></li>
-            <li><a class="navBlock" href="#">About</a></li>
-            <li><a class="navBlock" href="#">Contact Us</a></li>
-        </ul>
-        <section class="background-container">
-            <h1 class="centered background-title">Contact Us</h1>
-            <!--change p to h1 tag, better SEO-->
-            <div class="background-image">
-                <img id="background-pic" src="images/telephone.jpg" alt="a pink telephone on small table">
-            </div>
-            <div id="inside-background-container" class="blue-container">
-                <p>Reach Us Here, All information available on this page</p>
-            </div>
-        </section>
+      <ul class="topnav">
+        <li>
+          <a href="#home"
+            ><img
+              id="main-icon"
+              src="images/icon.png"
+              alt=" icon health minded"
+          /></a>
+        </li>
+        <li><a class="navBlock" href="#">Home</a></li>
+        <li><a class="navBlock" href="#">Mental Health</a></li>
+        <li><a class="navBlock" href="#">Services</a></li>
+        <li><a class="navBlock" href="#">FAQs</a></li>
+        <li><a class="navBlock" href="#">About</a></li>
+        <li><a class="navBlock" href="#">Contact Us</a></li>
+      </ul>
+      <section class="background-container">
+        <h1 class="centered background-title">Contact Us</h1>
+        <!--change p to h1 tag, better SEO-->
+        <div class="background-image">
+          <img
+            id="background-pic"
+            src="images/telephone.jpg"
+            alt="a pink telephone on small table"
+          />
+        </div>
+        <div id="inside-background-container" class="blue-container">
+          <p>Reach Us Here, All information available on this page</p>
+        </div>
+      </section>
     </header>
 
-    <main class="content-container">
+    <main class="content-container"></main>
 
-
-
-
-    </main>
-
-    <footer>
-        <form id="feedback-form" class="flex-container" action="" method="post">
+    <footer class="footer-container">
+      <form id="feedback-form" class="footer-left" action="#" method="post">
+        <div>
+          <div id="footer-text-input">
+            <div>
+              <label class="footer-word" for="form-name">Name :</label>
+              <input type="text" name="Name" id="form-name" />
+            </div>
 
             <div>
-                <label class="footer-word" for="form-name">Name :</label>
-                <input type="text" name="Name" id="form-name">
-
-                <label class="footer-word" for="form-email">Email :</label>
-                <input type="text" name="Name" id="form-email">
+              <label class="footer-word" for="form-email">Email :</label>
+              <input type="text" name="Name" id="form-email" />
             </div>
-            <div>
-                <label class="footer-word" for="form-comment">Comment :</label>
-                <textarea id="comment-footer" name="comment" form="feedback-form">Enter text here...</textarea>
-            </div>
-            <div class="footer-btn">
-                <a href="#" target="_blank">Privacy Term</a>
-                <button id="footer-btn" type="submit">Send a Feedback</button>
-            </div>
+          </div>
 
-        </form>
+          <div id="footer-feedback-box">
+            <label class="footer-word" for="form-comment">Message :</label>
+            <textarea
+              id="comment-footer"
+              name="comment"
+              form="feedback-form"
+              placeholder="Enter message here"
+            ></textarea>
+          </div>
+        </div>
 
+        <div>
+          <a id="footer-privacy-link" href="#" target="_blank">Privacy Term</a>
+          <button id="footer-btn" type="submit">
+            <strong>Send a Feedback</strong>
+          </button>
+        </div>
+      </form>
+
+      <div class="footer-right">
+        <div class="footer-icons">
+          <p class="footer-word">
+            <strong>Share this page</strong>
+          </p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-envelope"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
     </footer>
-
-
-
-</body>
-
+  </body>
 </html>
