@@ -89,7 +89,7 @@ img#background-pic {
   background-color: #004080;
   color: white;
   margin: 0;
-  padding: 1rem;
+  padding: 2.5rem;
   border: 0;
   width: 100%;
 }
@@ -100,11 +100,14 @@ img#background-pic {
   left: 50%;
   transform: translate(-50%, -1%);
 }
+
 main {
   height: 130vh;
   width: auto;
 }
+
 /* footer  */
+
 footer {
   width: 100%;
   background-color: black;
