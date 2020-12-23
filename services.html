@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--reset.css must always above any css file-->
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/style-kinah.css"/>
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <ul class="topnav">
+        <li>
+          <a href="#home"><img id="main-icon" src="images/icon.png" alt="icon health minded" /></a>
+        </li>
+        <li><a class="navBlock" href="#">Home</a></li>
+        <li><a class="navBlock" href="#">Mental Health</a></li>
+        <li><a class="navBlock" href="services.html">Services</a></li>
+        <li><a class="navBlock" href="#">FAQs</a></li>
+        <li><a class="navBlock" href="#">About</a></li>
+        <li><a class="navBlock" href="#">Contact Us</a></li>
+      </ul>
+      <section class="background-container">
+        <!--change p to h1 tag, better SEO-->
+
+        <div class="background-image">
+          <img id="background-pic" src="images/first-therapy-counseling-session.jpeg" alt="counseling room" />
+        </div>
+      </section>
+    </header>
+
+    <main class="content">
+      <div class="white-container">
+        <h1 class="centered-title">Our Services</h1>
+        <p id="intro">
+          Heartminded Therapy offers counselling session for those who seek help to get better.
+          We provide two types of services, one-to-one therapy and group therapy. People can
+          choose whichever therapy they prefer and comfortable with. One of our policy is to
+          make sure every session confidential. All of the problems shared will not be disclosed
+          to anyone. This is to protect the privacy of every individuals that seek help from
+          Heartminded Therapy. Our top priority is to help people in need by providing counseling
+          sessions for them. They can make an appointment with  our specialist to talk more about
+          their problems. To know more about services provided, click the link below.
+        </p>
+        <div class="sessions">
+          <a class="oneTone" href="#intro-1T1">One-to-One Session</a> |
+          <a class="group" href="#intro-group">Group session</a>
+        </div>
+      </div>
+
+      <div id="typeSessions">
+        <h1><b>Types of Services</b></h1>
+      </div>
+
+      <div class="info-image-container">
+        <img class="img-session1" src="images/counseling.jpg" alt="personal session">
+        <p id="intro-1T1">
+          <b id="title-intro-1T1">One-to-One Session</b><br>
+          One-to-one session is a personal counseling between an individual and counselor.
+          One-to-one session focused on helping individual who seeks professional help.
+          During this therapy, our therapist will let the individual to open up on their problems.
+        </p>
+      </div>
+      <div class="info-image-container">
+        <p id="intro-group">
+          <b id="title-intro-group">Group Session</b><br>
+          Group session is conducted in a group of people. The benefit of group session is
+          that it help them to realized that they are not alone in the journey to be better
+          from mental health issues. Individual may choose to group among their acquaintance
+          or they can choose to join group among strangers.
+        </p>
+        <img class="img-session2" src="images/group-counseling-1.jpg" alt="group session">
+      </div>
+    </main>
+
+    <footer class="footer-container">
+      <form id="feedback-form" class="footer-left" action="#" method="post">
+        <div>
+          <div id="footer-text-input">
+            <div>
+              <label class="footer-word" for="form-name">Name :</label>
+              <input type="text" name="Name" id="form-name" />
+            </div>
+
+            <div>
+              <label class="footer-word" for="form-email">Email :</label>
+              <input type="text" name="Name" id="form-email" />
+            </div>
+          </div>
+
+          <div id="footer-feedback-box">
+            <label class="footer-word" for="form-comment">Message :</label>
+            <textarea id="comment-footer" name="comment" form="feedback-form" placeholder="Enter message here"></textarea>
+          </div>
+        </div>
+
+        <div id="footer-bottom-row">
+          <a id="footer-privacy-link" href="privacy-policy-template.pdf" target="_blank">Privacy Term</a>
+          <button id="footer-btn" type="submit">
+            <strong>Send a Feedback</strong>
+          </button>
+        </div>
+      </form>
+
+      <div class="footer-right">
+        <div class="footer-icons">
+          <p class="footer-word">
+            <strong>Share this page</strong>
+          </p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-envelope"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

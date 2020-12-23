@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+  /*Height and width calc includes border and padding*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Navigation bar [caution! unless youre really sure , dont disturb this]*/
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #004080;
+  position: relative;
+  top: 0;
+}
+
+#main-icon {
+  height: 5rem;
+  width: 10rem;
+}
+
+.navBlock {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  text-decoration: none;
+}
+
+.navBlock:hover {
+  color: greenyellow;
+}
+
+.background-container {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-image
+{
+  z-index: auto;
+}
+
+#background-pic
+{
+  width: 1350px;
+  height: 500px;
+}
+
+.centered-title
+{
+  position: absolute;
+  display: grid;
+  color: antiquewhite;
+  text-align: center;
+  height: 70px;
+  width: 200px;
+  margin-top: -80px;
+  margin-left: 45%;
+  font-size: 2rem;
+  padding: 16px 0px;
+  background-color: #004080;
+  border-radius: 50%;
+}
+
+#intro
+{
+  margin: 40px 150px 10px 150px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.sessions
+{
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.oneTone:link
+{
+  text-decoration: none;
+}
+
+.group:link
+{
+  text-decoration: none;
+}
+
+.oneTone:hover
+{
+  color: red;
+  text-decoration: underline;
+}
+
+.group:hover
+{
+  color: red;
+  text-decoration: underline;
+}
+
+#typeSessions
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+}
+
+.img-session1
+{
+  height: auto;
+  object-fit: scale-down;
+  width: 30%;
+  float: left;
+  margin: 30px 0px 40px 100px;
+}
+
+#title-intro-1T1
+{
+  font-size: 2rem;
+  padding-left: 40px;
+}
+
+#intro-1T1
+{
+  height: 180px;
+  width: 500px;
+  border: 1px solid black;
+  font-size: 1rem;
+  float: right;
+  text-align: justify;
+  background-color: #eee;
+  margin-right: 200px;
+  margin-top: 40px;
+  padding: 10px 30px 30px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+#title-intro-group
+{
+  font-size: 2rem;
+  padding-left: 40px;
+}
+
+#intro-group
+{
+  height: 200px;
+  width: 500px;
+  border: 1px solid black;
+  font-size: 1rem;
+  text-align: justify;
+  float: left;
+  background-color: #eee;
+  margin-left: 200px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.img-session2
+{
+  height: auto;
+  object-fit: scale-down;
+  width: 30%;
+  float: right;
+  margin: 70px 100px 70px 0px;
+}
+
+main {
+  height: auto;
+  width: 100%;
+}
+
+/* footer  */
+
+footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer-container {
+  display: block;
+}
+
+.footer-word {
+  color: white;
+}
+
+.footer-right,
+.footer-left {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.footer-left {
+  margin: 3em 2em 2em 4em;
+  width: 70%;
+}
+
+.footer-left div label {
+  display: block;
+  margin: 1em 0;
+}
+
+#footer-privacy-link {
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 1.2em;
+  margin-right: 7em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* comment is feedback message input*/
+#comment-footer {
+  resize: none;
+  overflow: auto;
+  height: 25vh;
+  width: 20vw;
+}
+
+#footer-btn {
+  padding: 1.5em;
+  background-color: cadetblue;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 1em;
+  width: 14em;
+  color: rgb(31, 30, 30);
+}
+
+div#footer-feedback-box,
+div#footer-text-input {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3em;
+  margin-bottom: 5em;
+}
+
+.footer-right {
+  margin: 3em 2em 2em;
+}
+
+.footer-right div p {
+  font-size: x-large;
+  text-align: left;
+}
+
+.footer-right div a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 820px) {
+  /* For mobile phones: */
+
+  .inside-background-container {
+    position: relative;
+  }
+
+  .centered.background-title {
+    display: block;
+    background-color: #004080;
+  }
+  .topnav {
+    display: block;
+    padding: 0 0 1em;
+    text-align: center;
+    align-items: center;
+  }
+  .navBlock {
+    display: block;
+  }
+
+  #footer-bottom-row a {
+    display: block;
+  }
+  #footer-bottom-row button {
+    display: block;
+    margin: 40px auto;
+  }
+
+  #footer-feedback-box label,
+  #footer-feedback-box textarea {
+    display: block;
+  }
+
+  #footer-feedback-box textarea#comment-footer {
+    width: 100%;
+  }
+}
+
+/* minor correction */
+.info-image-container {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.info-image-container p,
+.info-image-container img{
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+}
