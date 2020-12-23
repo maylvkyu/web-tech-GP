@@ -1,0 +1,426 @@
+* {
+  box-sizing: border-box;
+  /*Height and width calc includes border and padding*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+/*Navigation bar [caution! unless youre really sure , dont disturb this]*/
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #004080;
+  position: relative;
+  top: 0;
+}
+
+#main-icon {
+  height: 5rem;
+  width: 10rem;
+}
+
+.navBlock {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  text-decoration: none;
+}
+
+.navBlock:hover {
+  color: greenyellow;
+}
+
+
+/*Background image with white text at the middle of backgrnd pic*/
+/*Take note img#background-pic is not the same with img  #background-pic,
+the former target elemnt with both image AND id, the latter only target the child of img with that id*/
+img#background-pic {
+  max-width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.background-container {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-image {
+  z-index: -2;
+}
+
+.background-title {
+  font-size: 6em;
+  z-index: 1;
+  color: white;
+  width: fit-content;
+  font-family: Arial Black;
+
+}
+/*class put thing at the center of container, used in backgrnd pic*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Content [under progress] */
+.content-container {
+  position: relative;
+  margin: 0;
+  top: 0;
+}
+/*Blue container for title which in white color*/
+.blue-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: top;
+  background-color: white;
+  margin: 0;
+  border: 0;
+  width: 100%;
+}
+
+#inside-background-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -1%);
+
+}
+main {
+  height: 190vh;
+  width: auto;
+
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+
+}
+
+.footer-word {
+  color: white;
+  font-size: 1em;
+}
+
+.flex-container {
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  flex-direction:column;
+}
+
+.flex-container   div  {
+
+  padding: 2em;
+  align-items: center;
+}
+
+#comment-footer {
+  resize: none;
+  overflow: auto;
+  height: 20vh;
+  width: 25em;
+}
+
+footer form div input {
+
+  vertical-align: top;
+
+  margin: 0;
+}
+
+footer form div label {
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+
+}
+
+#footer-btn {
+  margin-left: 5em;
+}
+
+
+
+#heading1 {
+  font-family: Arial;
+  padding-top: 30px;
+  padding-left: 50px;
+  color: #004080;
+}
+
+#description1 {
+  padding-left: 50px;
+  line-height: 0.5;
+  font-family: sans-serif;
+}
+
+.container2{
+  background-color: #004080;
+  margin-top: 50px;
+  padding: 20px;
+  line-height: 0.5;
+
+}
+
+#containerMission {
+  margin-right: 400px;
+  padding-right: 440px;
+  font-family: Arial Black;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+#containerVision {
+  position: absolute;
+  top:236px;
+  right: 520px;
+  font-family: Arial Black;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+#containerValues {
+  position: absolute;
+  top:236px;
+  right: 110px;
+  font-family: Arial Black;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+#heading2 {
+  font-family: Arial;
+  color: #004080;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+.therPic {
+  padding-left: 30px;
+  padding-top: 15px;
+  height: 10rem;
+  width: 10rem;
+}
+
+.details {
+  line-height: 0.5;
+  font-family: sans-serif;
+  position: absolute;
+  top:14%;
+  left:27%;
+}
+
+
+.container{
+  width:100%;
+  height:27vh;
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#slider{
+  width: 840px;
+  height: 180px;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow:1px 1px 1px 1px;
+}
+
+.slide {
+  width: 840px;
+  height: 180px;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow:1px 1px 1px 1px;
+  position: absolute;
+  display:none;
+}
+
+.slide.active{
+  width: 840px;
+  height: 180px;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow:1px 1px 1px 1px;
+  display: block;
+}
+
+
+#left-arrow{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color:white;
+  background-color:#004080;
+  position:absolute;
+  top:680px;
+  left:150px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#right-arrow{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color:white;
+  background-color:#004080;
+  position:absolute;
+  top:680px;
+  right:150px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+#heading3 {
+  font-family: Arial;
+  padding-top: 130px;
+  padding-left: 50px;
+  color: #004080;
+}
+
+#descriptionReview {
+  font-family: Arial;
+  padding-left: 50px;
+  color: grey;
+  line-height: 0.5;
+}
+
+#box1 {
+  position: absolute;
+  left: 4%;
+  top: 85%;
+  padding: 10px;
+  width: 430px;
+  line-height: 0.5;
+  border: 1px solid gray;
+  margin: 0;
+  border-radius: 10px;
+}
+
+#box2 {
+  position: absolute;
+  left: 40%;
+  top: 85%;
+  padding: 10px;
+  width: 580px;
+  line-height: 0.5;
+  border: 1px solid gray;
+  margin: 0;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer-container {
+  display: block;
+}
+
+.footer-word {
+  color: white;
+}
+
+.footer-right,
+.footer-left {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.footer-left {
+  margin: 3em 2em 2em 4em;
+  width: 70%;
+}
+
+.footer-left div label {
+  display: block;
+  margin: 1em 0;
+}
+
+#footer-privacy-link {
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 1.2em;
+  margin-right: 7em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* comment is feedback message input*/
+#comment-footer {
+  resize: none;
+  overflow: auto;
+  height: 25vh;
+  width: 20vw;
+}
+
+#footer-btn {
+  padding: 1.5em;
+  background-color: cadetblue;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 1em;
+  width: 14em;
+  color: rgb(31, 30, 30);
+}
+
+div#footer-feedback-box,
+div#footer-text-input {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3em;
+  margin-bottom: 5em;
+}
+
+.footer-right {
+  margin: 3em 2em 2em;
+}
+
+.footer-right div p {
+  font-size: x-large;
+  text-align: left;
+}
+
+.footer-right div a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-top: 1em;
+}
