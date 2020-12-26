@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--reset.css must always above any css file-->
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles/style-azam.css" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+
+  <style>
+    main {
+      height: auto;
+    }
+
+    div.ui-tabs.ui-corner-all.ui-widget.ui-widget-content {
+      margin: 3em auto;
+      height: auto;
+      width: 80%;
+    }
+
+    #tabs-1 {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #left-tab {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #left-tab iframe {
+      height: auto;
+    }
+
+    #left-tab div {
+      margin: 2em auto;
+      text-align: center;
+    }
+
+    #left-tab iframe {
+      margin: auto;
+      height: 50vh;
+      width: 80%;
+    }
+
+    #left-tab div i {
+      font-size: 220%;
+      margin-bottom: 1em;
+    }
+
+    #tab-2 div {
+      
+      text-align: center;
+     
+      
+    }
+
+    #tab-2 > div >div {
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="topnav">
+      <li>
+        <a href="#home"><img id="main-icon" src="images/icon.png" alt=" icon health minded" /></a>
+      </li>
+      <li><a class="navBlock" href="#">Home</a></li>
+      <li><a class="navBlock" href="#">Mental Health</a></li>
+      <li><a class="navBlock" href="#">Services</a></li>
+      <li><a class="navBlock" href="#">FAQs</a></li>
+      <li><a class="navBlock" href="#">About</a></li>
+      <li><a class="navBlock" href="#">Contact Us</a></li>
+    </ul>
+    <section class="background-container">
+      <!--change p to h1 tag, better SEO-->
+      <h1 class="centered background-title">Contact Us</h1>
+      <div class="background-image">
+        <img id="background-pic" src="images/telephone.jpg" alt="a pink telephone on small table" />
+      </div>
+      <div id="" class="blue-container inside-background-container">
+        <p>Reach Us Here, All information available on this page</p>
+      </div>
+    </section>
+  </header>
+
+  <main class="content-container">
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Location</a></li>
+        <li><a href="#tabs-2">Operating Hour</a></li>
+        <li><a href="#tabs-3">Book An Appointment</a></li>
+      </ul>
+      <div id="tabs-1">
+        <div id="left-tab">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1FvJ2EHFt8Hf691PG5kQj0TzTo80"></iframe>
+
+          <div>
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>
+                <span>International Islamic University Malaysia , P.O. Box 10,
+                  50728 Kuala Lumpur</span>
+              </p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>(+60)10 0000 000</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>
+                <a href="mailto:support@healthminded.com">support@healthminded.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tabs-2">
+        <div>
+          <div>Operating Hours</div>
+          <div>Monday – Friday 8.00 a.m.- 5.00 p.m.</div>
+          <div>Rest Hour</div>
+          <div>Monday – Thursday 1.00 p.m. – 2.00 p.m.</div>
+          <div>Friday 12.15 p.m – 2.45 p.m</div>
+        </div>
+      </div>
+      <div id="tabs-3">
+        <form action="" method="get">
+          <br /><br />
+          <div>
+            <span><label for="first-name">First Name :</label></span>
+            <span><input type="text" name="firstName" id="first-name" /></span>
+          </div>
+          <br /><br />
+          <div>
+            <label for="last-name">Last Name :</label>
+            <input type="text" name="" id="last-name" />
+          </div>
+          <br /><br />
+          <div>
+            <label for="email-address">Email Address :</label>
+            <input type="email" name="" id="email-address" />
+          </div>
+          <br /><br />
+          <div>
+            <label for="contact-number">Contact Number :</label>
+            <input type="tel" name="" id="contact-number" />
+          </div>
+          <br /><br />
+          <div>
+            <label for="date-time">Proposed Date & Time :</label>
+            <input type="datetime-local" name="" id="date-time" />
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <br /><br />
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-container">
+    <form id="feedback-form" class="footer-left" action="#" method="post">
+      <div>
+        <div id="footer-text-input">
+          <div>
+            <label class="footer-word" for="form-name">Name :</label>
+            <input type="text" name="Name" id="form-name" />
+          </div>
+
+          <div>
+            <label class="footer-word" for="form-email">Email :</label>
+            <input type="text" name="Name" id="form-email" />
+          </div>
+        </div>
+
+        <div id="footer-feedback-box">
+          <label class="footer-word" for="form-comment">Message :</label>
+          <textarea id="comment-footer" name="comment" form="feedback-form" placeholder="Enter message here"></textarea>
+        </div>
+      </div>
+
+      <div id="footer-bottom-row">
+        <a id="footer-privacy-link" href="privacy-policy-template.pdf" target="_blank">Privacy Term</a>
+        <button id="footer-btn" type="submit">
+          <strong>Send a Feedback</strong>
+        </button>
+      </div>
+    </form>
+
+    <div class="footer-right">
+      <div class="footer-icons">
+        <p class="footer-word">
+          <strong>Share this page</strong>
+        </p>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
