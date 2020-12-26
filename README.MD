@@ -1,33 +1,33 @@
 
-READ ME.MD 
+#**READ ME.MD** 
 
-Group Alpha 
+##Group 2 
 
-‘GoShoe’ 
+‘HealthMinded' 
 
-Prepared by Yyy (matricNo) and Aaa (matricNo) 
+###Prepared by Yyy (matricNo) and Aaa (matricNo) 
 
-‘GoShoe’ is a website for an online shoe retailer based in Kuala Lumpur, Malaysia. 
-
- 
+###‘GoShoe’ is a website for an online shoe retailer based in Kuala Lumpur, Malaysia. 
 
  
 
  
 
-Project Description 
+ 
+
+##Project Description 
 
 <insert project description) 
 
  
 
-Project Sitemap 
+##Project Sitemap 
 
 <insert sitemap) 
 
  
 
-Group Contributions 
+##Group Contributions 
 
  
 
@@ -91,7 +91,7 @@ JavaScript event handlers for Add-To-Cart and storage of data using JSON
 
  
 
-Use of third party resources 
+##Use of third party resources 
 
  
 
@@ -141,7 +141,7 @@ All graphics are resized using GIMP.
 
  
 
-References 
+##References 
 
  
 
