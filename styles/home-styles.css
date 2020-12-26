@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+/*Height and width calc includes border and padding*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*Navigation bar [caution! unless youre really sure , dont disturb this]*/
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: stretch;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #004080;
+  position: relative;
+}
+
+#main-icon {
+  height: 5rem;
+  width: 10rem;
+}
+
+.navBlock {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  text-decoration: none;
+}
+
+.navBlock:hover {
+  color: greenyellow;
+}
+.background-image {
+  /* width: 1280px; */
+  height: 350px;
+}
+#background-picture {
+  width: 1280px;
+  height: 350px;
+  border: 0;
+  margin: 0;
+  padding 0;
+}
+.quote-1 {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  margin: 0;
+  padding: 5px solid #555;;
+  font-size: 40px;
+  height: 50px;
+
+
+}
+#mental {
+  float: right;
+  height: 350px;
+  width: 500px;
+  /* border: 2px solid #555;
+  border-top:0;
+  border-bottom:0; */
+  padding: 0;
+  margin: 0;
+
+}
+
+.div-1 {
+    padding-top:45px;
+    padding-left: 45px;
+    padding-bottom: 52px;
+}
+.question-1 {
+  font-size: 40px;
+  color: #555;
+  margin-top: 0px;
+
+}
+
+.content-1 {
+  font-size: 25px;
+  padding-right: 35px;
+
+}
+.quote-2 {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  margin: 0;
+  padding: 5px solid #555;
+  font-size: 40px;
+  height: 50px;
+}
+#depressed {
+  float: left;
+  height: 350px;
+  width: 525px;
+  padding-bottom: 3px;
+}
+.question-2 {
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 560px;
+    color: #555;
+}
+.content-2 {
+  font-size: 25px;
+  padding-left: 600px;
+
+}
+.stats-div {
+  background-color: #004080;
+  color: white;
+  height: 275px;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+.stats {
+  text-decoration: underline;
+  font-size: 30px;
+
+}
+.content-3 {
+  font-size: 20px;
+}
+.button {
+  height: 40px;
+  width: 180px;
+  background-color: #004080;
+  border-color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.getStarted {
+  color: white;
+  text-decoration: none;
+}
+
+/* footer  */
+
+footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer-container {
+  display: block;
+}
+
+.footer-word {
+  color: white;
+  margin: 0;
+}
+
+.footer-right,
+.footer-left {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.footer-left {
+  margin: 3em 2em 2em 4em;
+  width: 70%;
+}
+
+.footer-left div label {
+  display: block;
+  margin: 1em 0;
+}
+
+#footer-privacy-link {
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 1.2em;
+  margin-right: 7em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* comment is feedback message input*/
+#comment-footer {
+  resize: none;
+  overflow: auto;
+  height: 25vh;
+  width: 20vw;
+}
+
+#footer-btn {
+  padding: 1.5em;
+  background-color: cadetblue;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 1em;
+  width: 14em;
+  color: rgb(31, 30, 30);
+}
+
+div#footer-feedback-box,
+div#footer-text-input {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3em;
+  margin-bottom: 5em;
+}
+
+.footer-right {
+  margin: 3em 2em 2em;
+}
+
+.footer-right div p {
+  font-size: x-large;
+  text-align: left;
+}
+
+.footer-right div a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 820px) {
+  /* For mobile phones: */
+
+  .inside-background-container {
+    position: relative;
+  }
+
+  .centered.background-title {
+    display: block;
+    background-color: #004080;
+  }
+  .topnav {
+    /*display: block;*/
+    flex-direction: column;
+    padding: 0 0 1em;
+    text-align: center;
+    align-items: center;
+  }
+  .navBlock {
+    display: block;
+  }
+
+  #footer-bottom-row a {
+    display: block;
+  }
+  #footer-bottom-row button {
+    display: block;
+    margin: 40px auto;
+  }
+
+  #footer-feedback-box label,
+  #footer-feedback-box textarea {
+    display: block;
+  }
+
+  #footer-feedback-box textarea#comment-footer {
+    width: 100%;
+  }
+}
