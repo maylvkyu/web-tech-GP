@@ -29,6 +29,7 @@ Prepared by Syed Azamuddin \(1928931\)
 
 #### 4.**Use of third party resources**
 web elements | Name | Use of third party resources and modification | Modification
+-------------|------|-----------------------------------------------|-------------
 test1 | test2 | test 3 | test4
 
 
