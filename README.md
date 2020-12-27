@@ -1,6 +1,3 @@
-code {
-white-space : pre-wrap !important;
-}
 
 # HealthMinded Therapy Website By Group 2
 
