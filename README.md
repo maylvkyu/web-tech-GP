@@ -21,7 +21,7 @@ Prepared by Syed Azamuddin \(1928931\)
 #### 3.**Group Contribution**
 
     Each of the team members prepared 1 web pages for the project as shown in the following table.
-    -------|-----------------
+    
      Name  | Contribution  
     -------|----------------
      name1 | contribution1 
@@ -38,13 +38,13 @@ Prepared by Syed Azamuddin \(1928931\)
 #### 4.**Use of third party resources**
 web elements | Name | Use of third party resources and modification | Modification
 -------------|------|-----------------------------------------------|-------------
-             |      |                                               |             
+                                                                     
 -------------|------|-----------------------------------------------|-------------
-             |      |                                               |             
+            
 -------------|------|-----------------------------------------------|-------------
-             |      |                                               |             
+          
 -------------|------|-----------------------------------------------|-------------
-             |      |                                               |             
+           
 -------------|------|-----------------------------------------------|-------------
 
 
