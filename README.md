@@ -11,7 +11,7 @@ Prepared by Syed Azamuddin \(1928931\)
 
 #### 1.**Project Description**
 
-    ```
+    ```md
     Mental health is a big issue for 21st century’s society. As the world progresses at unprecedented pace, the mental illnesses among members of society have skyrocketed as well due to the nature of the modern lifestyle. For the final project of INFO 2302 , we have decided to make a website for counseling and mental therapist service. We believe that this project could serve as a training for us so that we could someday help the ummah to solve the problems related to mental health as a web developer. To realise this aspiration , we have set a few goals as guidelines.
 
     Our main goal for this project is to design a website capable of relaying client’s requests on the net without physical contact. As the covid-19 swept the world by surprise, many clients, especially those who live under quarantine, have faced the difficulty to contact their therapist for an appointment. For an effective workaround, we will use and design an online form, and embed it in our website. Secondly, to provide ample information to the client, we will provide some information on mental health as well as access to the details of our service, the operation time, and all necessary information of our operation activity. This will help them to make decisions better especially for those who need to schedule an appointment with us. Lastly, we need to emphasize the expertise of our counselors to the future client and create familiarity with them. By doing this, they will feel more confident with our service and their doubts will be removed. Hence, we will create a webpage which will display the information of our personnel and the client could click it right away from the main homepage.
