@@ -21,7 +21,7 @@ Prepared by Syed Azamuddin \(1928931\)
 
 #### 2.**Project Sitemap**
 
-    ![HealthMinded sitemap](images/sitemap.png)
+    [HealthMinded sitemap](/images/sitemap.png)
 
 #### 3.**Group Contribution**
 
