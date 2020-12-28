@@ -186,10 +186,12 @@
           <br /><br />
           <div>
             <label for="time-info">Proposed Time</label>
-            <input type="time" name="time" id="time-info" value="16:32"  required />
+            <input type="time" name="time" id="time-info" value="16:32" required />
           </div>
-          
-          <button id="appointment-btn"  type="submit">Submit</button>
+
+          <button id="appointment-btn" type="submit" onsubmit="return mainBtn()">
+            Submit
+          </button>
         </form>
         <br /><br />
       </div>
@@ -265,92 +267,8 @@
     $("#time-info").attr("min", "8:00");
     $("#time-info").attr("max", "17:00");
   });
-  
-  
 
-
-  function mainBtn() {
-    let time = getTimeStr();
-    let day = getDayStr();
-    
-    if (day === 0) {
-      alert("It is holiday");
-      btnSubmit.style.opacity = 0 ;
-
-
-    } else if (day === 1) {
-      if (compareTimeMTWDTH(time) === false) {
-        alert("Please Choose another time");
-        btnSubmit.style.opacity = 0 ;
-
-      }
-    } else {
-      if (compareTimeFri(time) === false) {
-        alert("Please Choose another time");
-        btnSubmit.style.opacity = 0 ;
-
-      }
-    }
-  }
-  function getDayStr() {
-    let dateInput = document.getElementById("date-box").value;
-    let date = new Date(dateInput);
-    let dayStr = date.getDay();
-    let a;
-    switch (dayStr) {
-      case 0:
-      case 6:
-        a = 0; // weekend
-        break;
-      case 1:
-      case 2:
-      case 3:
-      case 4:
-        a = 1; // non friday
-        break;
-
-      default:
-        a = 2; // friday
-        break;
-    }
-
-    //document.getElementById("demo").innerHTML = a;
-    return a;
-  }
-
-  function getTimeStr() {
-    let x = document.getElementById("myTime").value;
-    let a = x.slice(0, 2);
-    let b = x.slice(3);
-    let timeX = a + b;
-    //document.getElementById("demo").innerHTML = timeX;
-    return timeX;
-  }
-
-  function compareTimeMTWDTH(timeStr) {
-    let startWork = 800;
-    let startRest = 1300;
-    let endRest = 1400;
-    let endWork = 1700;
-    let time = parseInt(timeStr);
-    return (
-      (time >= startWork && time < startRest) ||
-      (time >= endRest && time < endWork)
-    );
-  }
-
-  function compareTimeFri(timeStr) {
-    let startWork = 800;
-    let startRest = 1215;
-    let endRest = 1445;
-    let endWork = 1700;
-    let time = parseInt(timeStr);
-    return (
-      (time >= startWork && time < startRest) ||
-      (time >= endRest && time < endWork)
-    );
-  }
-
+ 
 </script>
 
 </html>
