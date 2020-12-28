@@ -11,7 +11,7 @@ Prepared by Syed Azamuddin \(1928931\)
 
 #### 1.**Project Description**
 
-    ```
+```
 
     Mental health is a big issue for 21st century’s society. As the world progresses at unprecedented pace, the mental illnesses among members of society have skyrocketed as well due to the nature of the modern lifestyle. For the final project of INFO 2302 , we have decided to make a website for counseling and mental therapist service. We believe that this project could serve as a training for us so that we could someday help the ummah to solve the problems related to mental health as a web developer. To realise this aspiration , we have set a few goals as guidelines.
 
@@ -19,17 +19,17 @@ Prepared by Syed Azamuddin \(1928931\)
 
     We have collected our ideas together so that we can design our project in the best way possible in order to achieve the goals mentioned earlier. The theme of our webpage is minimalism. We want to present our webpage in the most humble way possible so that the clients when visiting our webpage, they won’t feel intimidated and hopefully just by the design, we can earn the clients’ trust and give them hope. Therefore we make sure the color of the webpage gives off calm feelings and the webpage is easy to navigate through. To create great user experience, we will use basic but various web tech tools. We will also present in the homepage, only what is necessary. There will be helpful and important information on the more common mental illnesses which are depression and anxiety as well as how to cope with stress. Lastly, once the client understands the information and decides that they want to receive help, they can reach out to the ‘contact us’ section and fill out the form to make an appointment with a counselor or a mental therapist.
 
-    ```
+```
 
 #### 2.**Project Sitemap**
+<img src="images/sitemap.png" alt="healthminded sitemap picture">
 
-    ![HealthMinded sitemap](images/sitemap.png)
 
 #### 3.**Group Contribution**
 
     Each of the team members prepared 1 web pages for the project as shown in the following table.
 
-     Name  | Contribution
+Name  | Contribution
 
 #### 4.**Use of third party resources**
 
