@@ -1,298 +1,356 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--reset.css must always above any css file-->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css" />
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles/style-azam.css" />
 
-    <style>
-      main {
-        height: auto;
-      }
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--reset.css must always above any css file-->
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles/style-azam.css" />
 
-      div.ui-tabs.ui-corner-all.ui-widget.ui-widget-content {
-        margin: 3em auto;
-        height: auto;
-        width: 80%;
-      }
+  <style>
+    main {
+      height: auto;
+    }
 
-      #tabs-1 {
-        margin: 2rem auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+    div.ui-tabs.ui-corner-all.ui-widget.ui-widget-content {
+      margin: 3em auto;
+      height: auto;
+      width: 80%;
+    }
 
-      #left-tab {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+    #tabs-1 {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-      #left-tab iframe {
-        height: auto;
-      }
+    #left-tab {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-      #left-tab div {
-        margin: 2em auto;
-        text-align: center;
-      }
+    #left-tab iframe {
+      height: auto;
+    }
 
-      #left-tab iframe {
-        margin: auto;
-        height: 50vh;
-        width: 80%;
-      }
+    #left-tab div {
+      margin: 2em auto;
+      text-align: center;
+    }
 
-      #left-tab div i {
-        font-size: 220%;
-        margin-bottom: 1em;
-      }
+    #left-tab iframe {
+      margin: auto;
+      height: 50vh;
+      width: 80%;
+    }
 
-      div#tabs-2.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 2em auto;
-        width: 80%;
-      }
+    #left-tab div i {
+      font-size: 220%;
+      margin-bottom: 1em;
+    }
 
-      div#tabs-2.ui-tabs-panel.ui-corner-bottom.ui-widget-content div {
-        text-align: center;
-      }
+    div#tabs-2.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2em auto;
+      width: 80%;
+    }
 
-      div#tabs-3.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
-        margin: 2em auto;
-        width: 60%;
-      }
+    div#tabs-2.ui-tabs-panel.ui-corner-bottom.ui-widget-content div {
+      text-align: center;
+    }
 
-      div#tabs-3.ui-tabs-panel.ui-corner-bottom.ui-widget-content form button {
-        margin: 2em auto;
-        display: block;
-        width: 25%;
-        padding: 1em 2em;
-        background-color: aquamarine;
-        border: transparent;
-        border-radius: 3px;
-      }
+    div#tabs-3.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
+      margin: 2em auto;
+      width: 60%;
+    }
 
-      div#tabs-3.ui-tabs-panel.ui-corner-bottom.ui-widget-content form div {
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
-  </head>
+    div#tabs-3.ui-tabs-panel.ui-corner-bottom.ui-widget-content form button {
+      margin: 2em auto;
+      display: block;
+      width: 25%;
+      padding: 1em 2em;
+      background-color: aquamarine;
+      border: transparent;
+      border-radius: 3px;
+      cursor: pointer;
+    }
 
-  <body>
-    <header>
-      <ul class="topnav">
-        <li>
-          <a href="#home"
-            ><img
-              id="main-icon"
-              src="images/icon.png"
-              alt=" icon health minded"
-          /></a>
-        </li>
-        <li><a class="navBlock" href="#">Home</a></li>
-        <li><a class="navBlock" href="#">Mental Health</a></li>
-        <li><a class="navBlock" href="#">Services</a></li>
-        <li><a class="navBlock" href="#">FAQs</a></li>
-        <li><a class="navBlock" href="#">About</a></li>
-        <li><a class="navBlock" href="#">Contact Us</a></li>
+    div#tabs-3.ui-tabs-panel.ui-corner-bottom.ui-widget-content form div {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="topnav">
+      <li>
+        <a href="#home"><img id="main-icon" src="images/icon.png" alt=" icon health minded" /></a>
+      </li>
+      <li><a class="navBlock" href="#">Home</a></li>
+      <li><a class="navBlock" href="#">Mental Health</a></li>
+      <li><a class="navBlock" href="#">Services</a></li>
+      <li><a class="navBlock" href="#">FAQs</a></li>
+      <li><a class="navBlock" href="#">About</a></li>
+      <li><a class="navBlock" href="#">Contact Us</a></li>
+    </ul>
+    <section class="background-container">
+      <!--change p to h1 tag, better SEO-->
+      <h1 class="centered background-title">Contact Us</h1>
+      <div class="background-image">
+        <img id="background-pic" src="images/telephone.jpg" alt="a pink telephone on small table" />
+      </div>
+      <div id="" class="blue-container inside-background-container">
+        <p>Reach Us Here, All information available on this page</p>
+      </div>
+    </section>
+  </header>
+
+  <main class="content-container">
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Location</a></li>
+        <li><a href="#tabs-2">Operating Hour</a></li>
+        <li><a href="#tabs-3">Book An Appointment</a></li>
       </ul>
-      <section class="background-container">
-        <!--change p to h1 tag, better SEO-->
-        <h1 class="centered background-title">Contact Us</h1>
-        <div class="background-image">
-          <img
-            id="background-pic"
-            src="images/telephone.jpg"
-            alt="a pink telephone on small table"
-          />
-        </div>
-        <div id="" class="blue-container inside-background-container">
-          <p>Reach Us Here, All information available on this page</p>
-        </div>
-      </section>
-    </header>
+      <div id="tabs-1">
+        <div id="left-tab">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1FvJ2EHFt8Hf691PG5kQj0TzTo80"></iframe>
 
-    <main class="content-container">
-      <div id="tabs">
-        <ul>
-          <li><a href="#tabs-1">Location</a></li>
-          <li><a href="#tabs-2">Operating Hour</a></li>
-          <li><a href="#tabs-3">Book An Appointment</a></li>
-        </ul>
-        <div id="tabs-1">
-          <div id="left-tab">
-            <iframe
-              src="https://www.google.com/maps/d/embed?mid=1FvJ2EHFt8Hf691PG5kQj0TzTo80"
-            ></iframe>
+          <div>
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>
+                <span>International Islamic University Malaysia , P.O. Box 10,
+                  50728 Kuala Lumpur</span>
+              </p>
+            </div>
 
             <div>
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p>
-                  <span
-                    >International Islamic University Malaysia , P.O. Box 10,
-                    50728 Kuala Lumpur</span
-                  >
-                </p>
-              </div>
-
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>(+60)10 0000 000</p>
-              </div>
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p>
-                  <a href="mailto:support@healthminded.com"
-                    >support@healthminded.com</a
-                  >
-                </p>
-              </div>
+              <i class="fa fa-phone"></i>
+              <p>(+60)10 0000 000</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>
+                <a href="mailto:support@healthminded.com">support@healthminded.com</a>
+              </p>
             </div>
           </div>
-        </div>
-        <div id="tabs-2">
-          <h4>Operating Hours</h4>
-
-          <div>Monday – Friday 8.00 a.m.- 5.00 p.m.</div>
-          <br /><br />
-          <h4>Rest Hour</h4>
-          <div>Monday – Thursday 1.00 p.m. – 2.00 p.m.</div>
-          <div>Friday 12.15 p.m – 2.45 p.m</div>
-          <br /><br />
-        </div>
-        <div id="tabs-3">
-          <form action="" method="get">
-            <br /><br />
-            <div>
-              <span><label for="first-name">First Name </label></span>
-              <span><input type="text" name="fName" id="first-name" required/></span>
-            </div>
-            <br /><br />
-            <div>
-              <label for="last-name">Last Name </label>
-              <input type="text" name="lName" id="last-name" required/>
-            </div>
-            <br /><br />
-            <div>
-              <label for="email-address">Email Address </label>
-              <input type="email" name="email" id="email-address" required/>
-            </div>
-            <br /><br />
-            <div>
-              <label for="contact-number">Contact Number </label>
-              <input type="tel" name="contactNumber" id="contact-number" required/>
-            </div>
-            <br /><br />
-            <div>
-              <label for="date-info">Proposed Date</label>
-              <input type="date" name="date" id="date-info" required/>
-            </div>
-            <br /><br />
-            <div>
-              <label for="time-info">Proposed Time</label>
-              <input type="time" name="time" id="time-info" required/>
-            </div>
-
-            <button id="appointment-btn" type="submit">Submit</button>
-          </form>
-          <br /><br />
         </div>
       </div>
-    </main>
+      <div id="tabs-2">
+        <h4>Operating Hours</h4>
 
-    <footer class="footer-container">
-      <form id="feedback-form" class="footer-left" action="#" method="post">
-        <div>
-          <div id="footer-text-input">
-            <div>
-              <label class="footer-word" for="form-name">Name :</label>
-              <input type="text" name="Name" id="form-name" />
-            </div>
+        <div>Monday – Friday 8.00 a.m.- 5.00 p.m.</div>
+        <br /><br />
+        <h4>Rest Hour</h4>
+        <div>Monday – Thursday 1.00 p.m. – 2.00 p.m.</div>
+        <div>Friday 12.15 p.m – 2.45 p.m</div>
+        <br /><br />
+      </div>
+      <div id="tabs-3">
+        <form action="" method="get">
+          <br /><br />
+          <div>
+            <span><label for="first-name">First Name </label></span>
+            <span><input type="text" name="fName" id="first-name" required /></span>
+          </div>
+          <br /><br />
+          <div>
+            <label for="last-name">Last Name </label>
+            <input type="text" name="lName" id="last-name" required />
+          </div>
+          <br /><br />
+          <div>
+            <label for="email-address">Email Address </label>
+            <input type="email" name="email" id="email-address" required />
+          </div>
+          <br /><br />
+          <div>
+            <label for="contact-number">Contact Number </label>
+            <input type="tel" name="contactNumber" id="contact-number" required />
+          </div>
+          <br /><br />
+          <div>
+            <label for="date-info">Proposed Date</label>
+            <input type="date" name="date" id="date-info" required />
+          </div>
+          <br /><br />
+          <div>
+            <label for="time-info">Proposed Time</label>
+            <input type="time" name="time" id="time-info" value="16:32"  required />
+          </div>
+          
+          <button id="appointment-btn"  type="submit">Submit</button>
+        </form>
+        <br /><br />
+      </div>
+    </div>
+  </main>
 
-            <div>
-              <label class="footer-word" for="form-email">Email :</label>
-              <input type="text" name="Name" id="form-email" />
-            </div>
+  <footer class="footer-container">
+    <form id="feedback-form" class="footer-left" action="#" method="post">
+      <div>
+        <div id="footer-text-input">
+          <div>
+            <label class="footer-word" for="form-name">Name :</label>
+            <input type="text" name="Name" id="form-name" />
           </div>
 
-          <div id="footer-feedback-box">
-            <label class="footer-word" for="form-comment">Message :</label>
-            <textarea
-              id="comment-footer"
-              name="comment"
-              form="feedback-form"
-              placeholder="Enter message here"
-            ></textarea>
+          <div>
+            <label class="footer-word" for="form-email">Email :</label>
+            <input type="text" name="Name" id="form-email" />
           </div>
         </div>
 
-        <div id="footer-bottom-row">
-          <a
-            id="footer-privacy-link"
-            href="privacy-policy-template.pdf"
-            target="_blank"
-            >Privacy Term</a
-          >
-          <button id="footer-btn" type="submit">
-            <strong>Send a Feedback</strong>
-          </button>
-        </div>
-      </form>
-
-      <div class="footer-right">
-        <div class="footer-icons">
-          <p class="footer-word">
-            <strong>Share this page</strong>
-          </p>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-envelope"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
+        <div id="footer-feedback-box">
+          <label class="footer-word" for="form-comment">Message :</label>
+          <textarea id="comment-footer" name="comment" form="feedback-form" placeholder="Enter message here"></textarea>
         </div>
       </div>
-    </footer>
-  </body>
 
-  <script src="scripts/jquery.js"></script>
-  <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+      <div id="footer-bottom-row">
+        <a id="footer-privacy-link" href="privacy-policy-template.pdf" target="_blank">Privacy Term</a>
+        <button id="footer-btn" type="submit">
+          <strong>Send a Feedback</strong>
+        </button>
+      </div>
+    </form>
 
-  <script>
-    $(function () {
-      $("#tabs").tabs();
-    });
+    <div class="footer-right">
+      <div class="footer-icons">
+        <p class="footer-word">
+          <strong>Share this page</strong>
+        </p>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
 
-    $(document).ready(function () {
-      let date = new Date();
-      let day = date.getDate();
-      let month = date.getMonth() + 1;
-      let year = date.getFullYear();
-      let hour = date.getHours();
-      let minute = date.getMinutes();
+<script src="scripts/jquery.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+  $(function () {
+    $("#tabs").tabs();
+  });
 
-      if (month < 10) month = "0" + month;
-      if (day < 10) day = "0" + day;
+  $(document).ready(function () {
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
 
-      let today = year + "-" + month + "-" + day;
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
 
-      $("#date-info").attr("value", today);
-      $("#date-info").attr("min", today);
-      $("#time-info").attr("min", "8:00");
-      $("#time-info").attr("max", "17:00");
-    });
+    let today = year + "-" + month + "-" + day;
 
+    $("#date-info").attr("value", today);
+    $("#date-info").attr("min", today);
+    $("#time-info").attr("min", "8:00");
+    $("#time-info").attr("max", "17:00");
+  });
+  
+  
+
+
+  function mainBtn() {
+    let time = getTimeStr();
+    let day = getDayStr();
     
-  </script>
+    if (day === 0) {
+      alert("It is holiday");
+      btnSubmit.style.opacity = 0 ;
+
+
+    } else if (day === 1) {
+      if (compareTimeMTWDTH(time) === false) {
+        alert("Please Choose another time");
+        btnSubmit.style.opacity = 0 ;
+
+      }
+    } else {
+      if (compareTimeFri(time) === false) {
+        alert("Please Choose another time");
+        btnSubmit.style.opacity = 0 ;
+
+      }
+    }
+  }
+  function getDayStr() {
+    let dateInput = document.getElementById("date-box").value;
+    let date = new Date(dateInput);
+    let dayStr = date.getDay();
+    let a;
+    switch (dayStr) {
+      case 0:
+      case 6:
+        a = 0; // weekend
+        break;
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+        a = 1; // non friday
+        break;
+
+      default:
+        a = 2; // friday
+        break;
+    }
+
+    //document.getElementById("demo").innerHTML = a;
+    return a;
+  }
+
+  function getTimeStr() {
+    let x = document.getElementById("myTime").value;
+    let a = x.slice(0, 2);
+    let b = x.slice(3);
+    let timeX = a + b;
+    //document.getElementById("demo").innerHTML = timeX;
+    return timeX;
+  }
+
+  function compareTimeMTWDTH(timeStr) {
+    let startWork = 800;
+    let startRest = 1300;
+    let endRest = 1400;
+    let endWork = 1700;
+    let time = parseInt(timeStr);
+    return (
+      (time >= startWork && time < startRest) ||
+      (time >= endRest && time < endWork)
+    );
+  }
+
+  function compareTimeFri(timeStr) {
+    let startWork = 800;
+    let startRest = 1215;
+    let endRest = 1445;
+    let endWork = 1700;
+    let time = parseInt(timeStr);
+    return (
+      (time >= startWork && time < startRest) ||
+      (time >= endRest && time < endWork)
+    );
+  }
+
+</script>
+
 </html>

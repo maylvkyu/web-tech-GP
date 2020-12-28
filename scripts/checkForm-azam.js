@@ -1,4 +1,4 @@
-let btnSubmit = document.getElementById("");
+let btnSubmit = document.getElementById("appointment-btn");
 btnSubmit.onclick = mainBtn;
 
 
@@ -55,8 +55,8 @@ function getTimeStr() {
 
 function compareTimeMTWDTH(timeStr) {
     let startWork = 800;
-    let startRest = 1100;
-    let endRest = 1300;
+    let startRest = 1300;
+    let endRest = 1400;
     let endWork = 1700;
     let time = parseInt(timeStr);
     return (
@@ -67,8 +67,8 @@ function compareTimeMTWDTH(timeStr) {
 
 function compareTimeFri(timeStr) {
     let startWork = 800;
-    let startRest = 1100;
-    let endRest = 1300;
+    let startRest = 1215;
+    let endRest = 1445;
     let endWork = 1700;
     let time = parseInt(timeStr);
     return (
