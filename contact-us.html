@@ -188,11 +188,13 @@
             <label for="time-info">Proposed Time</label>
             <input type="time" name="time" id="time-info" value="18:32" required />
           </div>
-          <input type="reset" >
+          <input type="reset" />
+          <br><br>
+          <p><small>Operation : Mon - Fri , 0800 - 1700 hours </small></p>
+          <p><small>Rest : Mon - Thu , 1300 - 1400 hours </small></p>
+          <p><small>Rest : Fri , 1215 - 1445 hours </small></p>
 
-          <button id="appointment-btn" type="submit" >
-            Submit
-          </button>
+          <button id="appointment-btn" type="submit">Submit</button>
         </form>
         <br /><br />
       </div>
@@ -268,12 +270,9 @@
     $("#date-info").attr("min", today);
     $("#time-info").attr("min", "8:00");
     $("#time-info").attr("max", "17:00");
-    $("input#time-info").on('click', mainBtn);
-    $("input#date-info").on('click', mainBtn);
-
+    $("input#time-info").on("click", mainBtn);
+    $("input#date-info").on("click", mainBtn);
   });
-
- 
 </script>
 
 </html>
