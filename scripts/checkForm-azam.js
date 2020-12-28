@@ -3,26 +3,33 @@ function mainBtn() {
     let day = getDayStr();
     let btnSubmit = document.getElementById("appointment-btn");
     if (day === 0) {
-      alert("It is holiday");
+      alert("It is holiday.Choose another date");
+      btnSubmit.style.cursor = "not-allowed";
+      btnSubmit.disabled = true;
 
-      return false;
+
+      
+     
     } else if (day === 1) {
       if (compareTimeMTWDTH(time) === false) {
-        alert("Please Choose another time");
-
-        return false;
-      }
+        alert("Please Choose another time");      
+        btnSubmit.style.cursor = "not-allowed";
+        btnSubmit.disabled = true;       
+             
+      } else { btnSubmit.disabled = false; btnSubmit.style.cursor = "pointer"; }
     } else {
       if (compareTimeFri(time) === false) {
         alert("Please Choose another time");
+        btnSubmit.style.cursor = "not-allowed";
+        btnSubmit.disabled = true;
 
-        return false;
-      }
+
+      } else { btnSubmit.disabled = false; btnSubmit.style.cursor = "pointer";  }
     }
-    return true;
+    
   }
   function getDayStr() {
-    let dateInput = document.getElementById("date-box").value;
+    let dateInput = document.getElementById("date-info").value;
     let date = new Date(dateInput);
     let dayStr = date.getDay();
     let a;
@@ -48,7 +55,7 @@ function mainBtn() {
   }
 
   function getTimeStr() {
-    let x = document.getElementById("myTime").value;
+    let x = document.getElementById("time-info").value;
     let a = x.slice(0, 2);
     let b = x.slice(3);
     let timeX = a + b;

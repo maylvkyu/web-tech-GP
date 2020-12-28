@@ -186,10 +186,11 @@
           <br /><br />
           <div>
             <label for="time-info">Proposed Time</label>
-            <input type="time" name="time" id="time-info" value="16:32" required />
+            <input type="time" name="time" id="time-info" value="18:32" required />
           </div>
+          <input type="reset" >
 
-          <button id="appointment-btn" type="submit" onsubmit="return mainBtn()">
+          <button id="appointment-btn" type="submit" >
             Submit
           </button>
         </form>
@@ -267,6 +268,7 @@
     $("#date-info").attr("min", today);
     $("#time-info").attr("min", "8:00");
     $("#time-info").attr("max", "17:00");
+    $("input#time-info").on('click', mainBtn);
   });
 
  
