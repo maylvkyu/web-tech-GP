@@ -1,0 +1,72 @@
+.column{
+  float: left;
+  width: 33.33%;
+  margin: 0px;
+  font-size: 30px;
+  color: #06A1EB;
+}
+
+.anxiety {
+  position: relative;
+  bottom: 90px;
+  left: 55px;
+}
+
+.depression {
+  position: relative;
+  bottom: 65px;
+  left: 60px;
+}
+
+.stress {
+  position: relative;
+  bottom: 100px;
+  left: 100px;
+}
+
+.Content-1{
+  background-color: #004080;
+  color: white;
+
+}
+
+.Content-2{
+  background-color: #06A1EB;
+}
+
+.Content-3{
+
+}
+
+.Content-3-List{
+  border-style: groove;
+  float: left;
+}
+
+.Content-3-intro{
+
+}
+
+.Content-3-contents, C3-getHelp{
+  background-color: #004080;
+  clear:both;
+  color: white;
+}
+
+.C3-depression{
+  float: left;
+}
+
+.C3-anxiety{
+
+}
+
+.blank{
+  background-color: black;
+}
+
+.C3-getHelp{
+  background-color: #004080;
+  clear:both;
+  color: white;
+}
